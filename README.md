@@ -1,0 +1,1 @@
+This project is my first attempt at creating a dynamic web application. In this project, I have implemented a simple Todo List where users can add, search, and delete todos. It was built using HTML, CSS, and JavaScript. This project allowed me to dive deeper into DOM manipulation, handling user input, and local storage for persisting data.
