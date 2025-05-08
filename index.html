@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnput Eventlari</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <div class="card shadow-lg rounded">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">📝 Todo List Sayfası</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <form id="todoAddForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="todoName" aria-describedby="todo"
+                                    placeholder="Bir görev giriniz...">
+                            </div>
+                            <button id="todoAddButton" type="submit" class="btn btn-success btn-block">
+                                <i class="fa fa-plus"></i> Todo Ekle
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-body border-top">
+                        <h5 class="card-title">🔍 Todo Listesi</h5>
+                        <form name="form2" id="todoListForm">
+                            <input id="todoSearch" type="text" class="form-control mt-2"
+                                placeholder="Görevler arasında arayın...">
+                        </form>
+
+                        <ul class="list-group mt-3">
+                            <!-- Dinamik todo elemanları buraya eklenecek -->
+                        </ul>
+
+                        <a href="#" id="clearButton" class="btn btn-danger btn-block mt-3">
+                            <i class="fa fa-trash"></i> Tüm Todoları Temizle
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
